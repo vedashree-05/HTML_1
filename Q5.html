@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+            text-align: center;
+            font-size:40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+        }
+        .inline{
+            display: inline;
+            font-style:normal;
+            font-family: 'Courier New', Courier, monospace;
+            width: 24%;
+            margin-right: 1%;
+        }
+        body{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<b>
+    <legend>New Employee Details Form</legend>
+    <h1 ><b>Personal Details</b></h1>
+    <div class="inline">
+        <label class="inline">YOUR NAME:</label><br>
+        <label for="name"  class="inline" >Title</label>
+        <input type="text" name="user" id="name" list="occupation"  required>
+    <datalist id="occupation">
+        <option value="CA"></option>
+        <option value="Dr."></option>
+        <option value="Prof."></option>
+        <option value="Mr./Mrs"></option>
+
+    </datalist>
+    <label class="inline">First Name</label>
+        <input type="text" name="user" id="name" required>
+        <label class="inline">Middle  Name</label>
+        <input type="text" name="user" id="name">
+        <label class="inline">Last Name</label>
+        <input type="text" name="user" id="name" required>
+    </div><br><br>
+
+
+    <label required class="inline">GENDER:</label> 
+        <input type="radio"  id="male" name="gender" value="male"  />
+        <label for="male" class="inline">male</label>
+        <input type="radio" id="female" name="gender" value="female"  />
+        <label for="female" class="inline">female</label><br><br>
+
+
+    <label class="inline">BIRTHDATE:</label>
+    <input type="date" ><br><br>
+    <label class="inline">ADDRESS:</label><br>
+    <label class="inline">Street Address</label>
+    <input type="address" id="address" required>
+    <label class="inline">Street Address 2</label>
+    <input type="address" id="address"><br><br>
+    <label class="inline">Suburb</label>
+    <input type="address" id="address" required>
+    <label class="inline">State</label>
+    <input type="state" state="user" id="state">
+    <label class="inline">Postcode</label>
+    <input type="number" id="number"><br><br>
+
+    <label class="inline">CONTACT:</label><br>
+    <label class="inline">Home Phone</label>
+    <input type="phno" class="number" id="phone">
+    <label class="inline">Mobile Phone</label>
+    <input type="phno" class="number" id="phone">
+    <label class="inline">Email address</label>
+    <input type="email" id="email"><br><br>
+
+    <mandatory><label class="inline">Are you an Australian?</label></mandatory>
+        <label class="inline"><input type="radio" name="australian" >YES</label>
+        <label class="inline"><input type="radio" name="australian">NO</label><br><br>
+
+    <mandatory><label class="inline">Do you have a working visa?</label></mandatory>
+        <label class="inline"><input type="radio" name="visa">YES</label>
+        <label class="inline" ><input type="radio" name="visa">NO</label><br><br>
+
+        
+        <h1><b>Employee Details</b></h1><br>
+        <mandatory><label class="inline">Job title</label></mandatory>
+        <input type="text" name="user" id="title"><br><br>
+        <mandatory><label class="inline">commencement date</label></mandatory>
+        <input type="datetime" name="user" id="date"><br><br>
+        <mandatory><label class="inline">File tax number</label></mandatory>
+        <input type="number" name="user" id="number"><br><br>
+        <mandatory><label class="inline">Employment Status</label></mandatory>
+        <label class="inline"><input type="radio" name="full time" >Full Time</label>
+        <label class="inline"><input type="radio" name="part time" >Part Time</label>
+        <label class="inline"><input type="radio" name="temp" >Temporary</label>
+        <label class="inline"><input type="radio" name="casual" >Casual</label><br><br><br>
+
+        <h1><b>Emergency Contact Details</b></h1><br>
+        <label class="inline">Name:</label><br>
+        <label for="name" class="inline">Title</label>
+        <input type="text" name="user" id="name" list="occupation" required>
+    <datalist id="occupation">
+        <option value="CA"></option>
+        <option value="Dr."></option>
+        <option value="Prof."></option>
+        <option value="Mr./Mrs"></option>
+
+    </datalist>
+    <label class="inline">First Name</label>
+        <input type="text" name="user" id="name" required>
+        <label class="inline">Middle  Name</label>
+        <input type="text" name="user" id="name">
+        <label class="inline">Last Name</label>
+        <input type="text" name="user" id="name" required><br><br>
+
+    <mandatory><label class="inline">Relationship</label></mandatory>
+    <input type="text" name="Relationship"><br><br>
+
+    <label class="inline">Contact:</label><br>
+    <label class="inline">Home Phone</label>
+    <input type="phno" class="number" id="phone">
+    <label class="inline">Mobile Phone</label>
+    <input type="phno" class="number" id="phone">
+    <label class="inline">Email address</label>
+    <input type="email" id="email"><br><br><br>
+
+    <h1><b>Bank details</b></h1>
+    <label class="inline">Bank:</label><br>
+    <label class="inline">Bank name</label>
+    <input type="text" required>
+    <label class="inline">Bank branch</label>
+    <input type="text" required><br><br>
+
+    <label class="inline">Account:</label><br>
+    <label class="inline">Account name</label>
+    <input type="text" required>
+    <label class="inline">Account number</label>
+    <input type="number" required>
+    <label class="inline">BSB number</label>
+    <input type="number" required><br><br>
+
+    <mandatory><label class="inline">Employee Signature</label></mandatory><br>
+    <input type="text" name="user" placeholder="print your name here"><br>
+    <input type="text" name="user" placeholder="enter date here"><br>
+    <textarea name="comments"
+        placeholder="sign here"
+        rows="3"
+        column="20"
+          
+        ></textarea><br>
+        <button ><b>Submit</b></button>
+</body>
+</html>
